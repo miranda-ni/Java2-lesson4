@@ -11,9 +11,12 @@ public class Doctor extends Person implements Printable {
     public Doctor(int age, String name, String profession) {
         super(age, name);
         this.profession = profession;
-        super.setAge(29);
-        super.setName("Timur");
+
+
+
     }
+
+
 
     @Override
     public void print() {

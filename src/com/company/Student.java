@@ -7,8 +7,6 @@ public class Student extends Person implements Printable {
     public Student(int age, String name, int course) {
         super(age, name);
         this.course = course;
-        super.setAge(21);
-        super.setName("Ali");
 
     }
 
