@@ -8,6 +8,8 @@ public class Teacher extends Person implements Printable {
         super(age, name);
         this.standing = standing;
         this.profession = profession;
+        super.getAge();
+        super.getName();
     }
 
     public Teacher(int age, String name) {
@@ -17,6 +19,6 @@ public class Teacher extends Person implements Printable {
     @Override
     public void print() {
         System.out.println( " Стаж работы  " +standing +
-                " Профессия  " + profession);
+                " Профессия  " + profession + " Возраст " + getAge() + " Имя " + getName());
     }
 }

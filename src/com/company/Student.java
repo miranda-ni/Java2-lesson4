@@ -1,13 +1,15 @@
 package com.company;
 
 public class Student extends Person implements Printable {
-    private int age;
+
     private int course;
 
     public Student(int age, String name, int course) {
         super(age, name);
-        this.age = age;
         this.course = course;
+        super.getAge();
+        super.getName();
+
     }
 
     public Student(int age, String name) {
@@ -16,7 +18,7 @@ public class Student extends Person implements Printable {
 
     @Override
     public void print() {
-        System.out.println(" Возраст  " + age +
+        System.out.println(" Возраст " + getAge() + " Имя " + getName() +
                 "  Курс " + course);
     }
 }

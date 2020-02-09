@@ -1,22 +1,24 @@
 package com.company;
 
 public class Doctor extends Person implements Printable {
-    private int age;
     private String profession;
 
-    public Doctor(int age, String name,  String profession) {
+    public Doctor(int age,String name) {
         super(age, name);
-        this.age = age;
-        this.profession = profession;
+
     }
 
-    public Doctor(int age, String name) {
+    public Doctor(int age, String name, String profession) {
         super(age, name);
+        this.profession = profession;
+        super.getAge();
+        super.getName();
     }
 
     @Override
     public void print() {
-        System.out.println("  Возраст  " + age +
-                "  Профессия  " +profession);
+    System.out.println(" Возраст " + getAge() +
+            " Имя " +getAge()+
+            "  Профессия  " +profession);
     }
 }
