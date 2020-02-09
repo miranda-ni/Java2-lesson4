@@ -11,14 +11,14 @@ public class Doctor extends Person implements Printable {
     public Doctor(int age, String name, String profession) {
         super(age, name);
         this.profession = profession;
-        super.getAge();
-        super.getName();
+        super.setAge(29);
+        super.setName("Timur");
     }
 
     @Override
     public void print() {
     System.out.println(" Возраст " + getAge() +
-            " Имя " +getAge()+
+            " Имя " +getName()+
             "  Профессия  " +profession);
     }
 }
